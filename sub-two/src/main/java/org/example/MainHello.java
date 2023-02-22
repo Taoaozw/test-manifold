@@ -4,7 +4,7 @@ public class MainHello {
 
     public static void main(String[] args) {
         String s = "hello world!";
-        s.print();
+        s.print("ddd");
         var x ="dddd";
         System.out.println();
         System.out.println(String.lineSeparator());

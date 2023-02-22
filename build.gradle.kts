@@ -11,7 +11,7 @@ allprojects {
 
 subprojects {
     apply(plugin = "java")
-    apply(plugin ="maven-publish")
+    apply(plugin = "maven-publish")
 
     repositories {
         mavenLocal()
@@ -31,6 +31,13 @@ subprojects {
     }
 
     tasks {
+
+        jar {
+            manifest {
+                attributes("Contains-Sources" to "java,class")
+            }
+        }
+
         test {
             useJUnitPlatform()
         }
